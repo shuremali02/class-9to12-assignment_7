@@ -12,9 +12,10 @@ export default function Header() {
       {/* Logo/Heading */}
       <div>
         <Link href={"/"}>
-        <h1 className="md:text-4xl text-2xl font-serif font-bold">
-          Data Fetching
-        </h1></Link>
+          <h1 className="md:text-4xl text-2xl font-serif font-bold text-white">
+            Data Fetching
+          </h1>
+        </Link>
       </div>
 
       {/* Desktop Menu */}
@@ -30,7 +31,7 @@ export default function Header() {
             setIsOpen(!isOpen);
           }}
           aria-label="toggle menu"
-          className="text-black"
+          className="text-white"
         >
           {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
         </button>
@@ -49,7 +50,7 @@ export default function Header() {
           </button>
 
           {/* Menu Items */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6 mt-8">
             <Button2 button="Server" href="/Server-side" />
             <Button2 button="Client" href="/Client-side" />
           </div>
