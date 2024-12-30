@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="h-[70px] px-2 md:px-4 flex justify-between w-full items-center top-0 sticky z-10 bg-teal-700">
+    <div className="h-[70px] px-2 md:px-4 flex justify-between w-full items-center top-0 sticky z-30 bg-teal-700">
       {/* Logo/Heading */}
       <div>
         <Link href={"/"}>
@@ -39,7 +39,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-white flex flex-col justify-center items-center z-20">
+        <div className="fixed inset-0 bg-white flex flex-col justify-center items-center z-50">
           {/* Cross Button */}
           <button
             onClick={() => setIsOpen(false)}

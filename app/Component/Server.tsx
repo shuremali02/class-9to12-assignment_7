@@ -17,9 +17,8 @@ const ServerCard = ({ id, name, type, available }: ServerType) => {
       <div className="flex justify-between items-center">
         <span className="text-gray-500 text-xs">ID: {id}</span>
         <span
-          className={`text-sm font-medium px-3 py-1 rounded ${
-            available ? "bg-green-100 text-green-600" : "bg-red-100 text-red-600"
-          }`}
+          className={`text-sm font-medium px-3 py-1 rounded ${available ? "bg-green-100 text-green-600" : "bg-red-100 text-red-600"
+            }`}
         >
           {available ? "Available" : "Unavailable"}
         </span>
