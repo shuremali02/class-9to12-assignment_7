@@ -2,7 +2,7 @@
 import ProductCard, { Product } from '@/app/Component/Client'
 import Loader from '@/app/Component/Loader'
 import React, { useEffect, useState } from 'react'
-
+// Csr
 export default function ClientSide() {
   const [loader, setLoader] = useState(false)
   const [products, setProduct] = useState<Product[]>([])
