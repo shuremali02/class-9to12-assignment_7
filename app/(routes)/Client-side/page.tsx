@@ -1,6 +1,7 @@
 "use client"
 import ProductCard, { Product } from '@/app/Component/Client'
 import Loader from '@/app/Component/Loader'
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 // Csr
 export default function ClientSide() {
@@ -34,7 +35,7 @@ export default function ClientSide() {
         <div className='grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-7 '>
           {products.map((Product, index) => (
             <div key={index}>
-              <ProductCard {...Product} />
+             <Link href={`/Client-side/${Product.id}`}> <ProductCard {...Product} /> </Link>
             </div>
 
           ))}
