@@ -10,6 +10,7 @@ export interface Product {
     count: number;
   };
 }
+import Image from "next/image";
 import React from "react";
 
 const ProductCard = ({
@@ -23,9 +24,11 @@ const ProductCard = ({
   return (
 
     <div className="max-w-sm rounded overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg bg-white p-6">
-      <img
+      <Image
         src={image}
         alt={title}
+        width={300}
+        height={200}
         className="w-full h-48 object-cover mb-4 rounded"
       />
       <h2 className="text-lg font-bold text-gray-800 mb-2">{title.slice(0, 30)}</h2>
